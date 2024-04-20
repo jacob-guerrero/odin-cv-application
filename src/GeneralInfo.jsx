@@ -23,7 +23,7 @@ function GeneralInfo () {
 
     return (
         <section className='general-info'>
-            <h2>General Information</h2>
+            <h2 className='section-title'>General Information</h2>
             
             <label htmlFor="name">
                 Name:
@@ -36,7 +36,7 @@ function GeneralInfo () {
             />
 
             <label htmlFor="lastName">
-                LastName:
+                Last Name:
             </label>
             <input
                 id='lastName'

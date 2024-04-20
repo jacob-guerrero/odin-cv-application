@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import GeneralInfo from './GeneralInfo'
+import EducationalInfo from './EducationalInfo'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
     <form>
        <GeneralInfo></GeneralInfo>
+       <EducationalInfo></EducationalInfo>
     </form>
     </>
   )
