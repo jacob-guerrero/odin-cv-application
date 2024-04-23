@@ -12,7 +12,7 @@ function GeneralInfo () {
     const changeLastName = (e) => {
         setLastNameValue(e.target.value) 
     }
-    const fullName = nameValue + ' ' + lastNameValue;
+    /* const fullName = nameValue + ' ' + lastNameValue; */
 
     const changeEmail = (e) => {
         setEmailValue(e.target.value) 
