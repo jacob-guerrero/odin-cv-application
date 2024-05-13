@@ -27,59 +27,71 @@ function PracticalExp () {
         <section className='educational-info'>
             <h2 className='section-title'>Practical Experience</h2>
             
-            <label htmlFor="company-name">
-                Company Name:
-            </label>
-            <input
-                id='company-name'
-                type="text"
-                value={companyName}
-                onChange={changeCompanyName}
-            />
+            <div className="section-content">
+                <div className="section-item">
+                    <label htmlFor="company-name">
+                        Company Name:
+                    </label>
+                    <input
+                        id='company-name'
+                        type="text"
+                        value={companyName}
+                        onChange={changeCompanyName}
+                    />
+                </div>
 
-            <label htmlFor="title-position">
-                Position Title:
-            </label>
-            <input
-                id='title-position'
-                type="text"
-                value={positionTitle}
-                onChange={changePositionTitle}
-            />
+                <div className="section-item">
+                    <label htmlFor="title-position">
+                        Position Title:
+                    </label>
+                    <input
+                        id='title-position'
+                        type="text"
+                        value={positionTitle}
+                        onChange={changePositionTitle}
+                    />
+                </div>
 
-            <label htmlFor="main-resp">
-                Main Responsabilities:
-            </label>
-            <input
-                id='main-resp'
-                type="text"
-                value={mainResp}
-                onChange={changeMainResp}
-            />
+                <div className="section-item">
+                    <label htmlFor="main-resp">
+                        Main Responsabilities:
+                    </label>
+                    <input
+                        id='main-resp'
+                        type="text"
+                        value={mainResp}
+                        onChange={changeMainResp}
+                    />
+                </div>
 
-            <label htmlFor="date-from">
-                From:
-            </label>
-            <input
-                id='date-from'
-                type="month"
-                value={dateFrom}
-                onChange={changeDateFrom}
-                min="1950-01"
-                max="2030-12"
-            />
+                <div className="section-item">
+                    <label htmlFor="date-from">
+                        From:
+                    </label>
+                    <input
+                        id='date-from'
+                        type="month"
+                        value={dateFrom}
+                        onChange={changeDateFrom}
+                        min="1950-01"
+                        max="2030-12"
+                    />
+                </div>
 
-            <label htmlFor="date-until">
-                Until:
-            </label>
-            <input
-                id='date-until'
-                type="month"
-                value={dateUntil}
-                onChange={changeDateUntil}
-                min="1950-01"
-                max="2030-12"
-            />
+                <div className="section-item">
+                    <label htmlFor="date-until">
+                        Until:
+                    </label>
+                    <input
+                        id='date-until'
+                        type="month"
+                        value={dateUntil}
+                        onChange={changeDateUntil}
+                        min="1950-01"
+                        max="2030-12"
+                    />
+                </div>
+            </div>
         </section>
     )
 

@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <form>
+    <form className='form-container'>
        <GeneralInfo></GeneralInfo>
        <EducationalInfo></EducationalInfo>
        <PracticalExp></PracticalExp>

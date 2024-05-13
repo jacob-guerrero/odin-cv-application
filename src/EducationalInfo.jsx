@@ -19,37 +19,45 @@ function EducationalInfo () {
         <section className='educational-info'>
             <h2 className='section-title'>Educational Experience</h2>
             
-            <label htmlFor="school-name">
-                School Name:
-            </label>
-            <input
-                id='school-name'
-                type="text"
-                value={schoolName}
-                onChange={changeSchool}
-            />
+            <div className="section-content">
+                <div className="section-item">
+                    <label htmlFor="school-name">
+                        School Name:
+                    </label>
+                    <input
+                        id='school-name'
+                        type="text"
+                        value={schoolName}
+                        onChange={changeSchool}
+                    />
+                </div>
 
-            <label htmlFor="title-study">
-                Title of Study:
-            </label>
-            <input
-                id='title-study'
-                type="text"
-                value={titleStudy}
-                onChange={changeTitleStudy}
-            />
+                <div className="section-item">
+                    <label htmlFor="title-study">
+                        Title of Study:
+                    </label>
+                    <input
+                        id='title-study'
+                        type="text"
+                        value={titleStudy}
+                        onChange={changeTitleStudy}
+                    />
+                </div>
 
-            <label htmlFor="date-study">
-                Conferred Date:
-            </label>
-            <input
-                id='date-study'
-                type="month"
-                value={dateStudy}
-                onChange={changeDateStudy}
-                min="1950-01"
-                max="2030-12"
-            />
+                <div className="section-item">
+                    <label htmlFor="date-study">
+                        Conferred Date:
+                    </label>
+                    <input
+                        id='date-study'
+                        type="month"
+                        value={dateStudy}
+                        onChange={changeDateStudy}
+                        min="1950-01"
+                        max="2030-12"
+                    />
+                </div>
+            </div>
         </section>
     )
 }

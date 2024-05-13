@@ -25,45 +25,55 @@ function GeneralInfo () {
         <section className='general-info'>
             <h2 className='section-title'>General Information</h2>
             
-            <label htmlFor="name">
-                Name:
-            </label>
-            <input
-                id='name'
-                type="text"
-                value={nameValue}
-                onChange={changeName}
-            />
+            <div className="section-content">
+                <div className="section-item">
+                    <label htmlFor="name">
+                        Name:
+                    </label>
+                    <input
+                        id='name'
+                        type="text"
+                        value={nameValue}
+                        onChange={changeName}
+                    />
+                </div>
 
-            <label htmlFor="lastName">
-                Last Name:
-            </label>
-            <input
-                id='lastName'
-                type="text"
-                value={lastNameValue}
-                onChange={changeLastName}
-            />
+                <div className="section-item">
+                    <label htmlFor="lastName">
+                        Last Name:
+                    </label>
+                    <input
+                        id='lastName'
+                        type="text"
+                        value={lastNameValue}
+                        onChange={changeLastName}
+                    />
+                </div>
 
-            <label htmlFor="email">
-                Email:
-            </label>
-            <input
-                id='email'
-                type="email"
-                value={emailValue}
-                onChange={changeEmail}
-            />
+                <div className="section-item">
+                    <label htmlFor="email">
+                        Email:
+                    </label>
+                    <input
+                        id='email'
+                        type="email"
+                        value={emailValue}
+                        onChange={changeEmail}
+                    />
+                </div>
 
-            <label htmlFor="phone">
-                Phone:
-            </label>
-            <input
-                id='phone'
-                type="tel"
-                value={phoneValue}
-                onChange={changePhone}
-            />
+                <div className="section-item">
+                    <label htmlFor="phone">
+                        Phone:
+                    </label>
+                    <input
+                        id='phone'
+                        type="tel"
+                        value={phoneValue}
+                        onChange={changePhone}
+                    />
+                </div>
+            </div>
         </section>
     )
 }
