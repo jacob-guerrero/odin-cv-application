@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function GeneralInfo () {
+function GeneralInfo ({buttonOn}) {
     const [nameValue, setNameValue] = useState("");
     const [lastNameValue, setLastNameValue] = useState("");
     const [emailValue, setEmailValue] = useState("");
@@ -19,6 +19,25 @@ function GeneralInfo () {
     }
     const changePhone = (e) => {
         setPhoneValue(e.target.value) 
+    }
+
+    if(buttonOn) {
+        return (
+            <section className='general-info'>
+                <h2 className='section-title'>General Information</h2>
+                <div className="section-content">
+                    <div className="section-item">
+                        <h3 className='fullname'>{nameValue} {lastNameValue}</h3>
+                    </div>
+                    <div className="section-item">
+                        <p className='section-item-value'>{emailValue}</p>
+                    </div>
+                    <div className="section-item">
+                        <p className='section-item-value'>{phoneValue}</p>
+                    </div>
+                </div>
+            </section>
+        )
     }
 
     return (
