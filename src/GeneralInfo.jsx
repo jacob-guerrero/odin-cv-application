@@ -21,13 +21,15 @@ function GeneralInfo ({buttonOn}) {
         setPhoneValue(e.target.value) 
     }
 
+    /* Rendering when submitting */
     if(buttonOn) {
         return (
             <section className='general-info'>
                 <h2 className='section-title'>General Information</h2>
+
                 <div className="section-content">
                     <div className="section-item">
-                        <h3 className='fullname'>{nameValue} {lastNameValue}</h3>
+                        <h3 className='section-item-title'>{nameValue} {lastNameValue}</h3>
                     </div>
                     <div className="section-item">
                         <p className='section-item-value'>{emailValue}</p>
@@ -40,6 +42,7 @@ function GeneralInfo ({buttonOn}) {
         )
     }
 
+    /* Rendering when editing */
     return (
         <section className='general-info'>
             <h2 className='section-title'>General Information</h2>

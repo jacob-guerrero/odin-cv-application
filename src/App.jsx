@@ -15,8 +15,8 @@ function App() {
     <>
     <form className='form-container'>
        <GeneralInfo buttonOn={buttonState}></GeneralInfo>
-       <EducationalInfo></EducationalInfo>
-       <PracticalExp></PracticalExp>
+       <EducationalInfo buttonOn={buttonState}></EducationalInfo>
+       <PracticalExp buttonOn={buttonState}></PracticalExp>
        <button onClick={changeButtonState}>Submit</button>
        <h2>{buttonState ? "True" : "False"}</h2>
     </form>

@@ -24,7 +24,7 @@ function PracticalExp () {
     }
 
     return (
-        <section className='educational-info'>
+        <section className='practical-info'>
             <h2 className='section-title'>Practical Experience</h2>
             
             <div className="section-content">
