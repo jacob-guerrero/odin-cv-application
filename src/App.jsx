@@ -10,6 +10,9 @@ function App() {
     e.preventDefault();
     buttonState ? setButtonState(false) : setButtonState(true)
   }
+  const onSub = (e) => {
+    e.preventDefault();
+  }
 
   return (
     <>
@@ -17,8 +20,10 @@ function App() {
        <GeneralInfo buttonOn={buttonState}></GeneralInfo>
        <EducationalInfo buttonOn={buttonState}></EducationalInfo>
        <PracticalExp buttonOn={buttonState}></PracticalExp>
-       <button onClick={changeButtonState}>Submit</button>
-       <h2>{buttonState ? "True" : "False"}</h2>
+       <div className="btn-container">
+        <button className='btn' onClick={changeButtonState}>{buttonState ? "Edit" : "Ok"}</button>
+        <button className='btn' onClick={onSub} disabled={!buttonState}>Submit</button>
+       </div>
     </form>
     </>
   )

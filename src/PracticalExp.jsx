@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function PracticalExp () {
+function PracticalExp ({buttonOn}) {
     const [companyName, setCompanyName] = useState("");
     const [positionTitle, setPositionTitle] = useState("");
     const [mainResp, setMainResp] = useState("");
@@ -23,23 +23,36 @@ function PracticalExp () {
         setDateUntil(e.target.value) 
     }
 
+    /* Rendering when submitting */
+    if(buttonOn) {
+        return (
+            <section className='educational-info'>
+                <h2 className='section-title'>Practical Experience</h2>
+
+                <div className="section-content">
+                    <div className="section-item">
+                        <h3 className='section-item-title'>{positionTitle}</h3>
+                    </div>
+                    <div className="section-item">
+                        <p className='section-item-value'>{companyName}</p>
+                    </div>
+                    <div className="section-item">
+                        <p className='section-item-value'>{mainResp}</p>
+                    </div>
+                    <div className="section-item">
+                        <p className='section-item-value'>{dateFrom} to {dateUntil}</p>
+                    </div>
+                </div>
+            </section>
+        )
+    }
+
+    /* Rendering when editing */
     return (
         <section className='practical-info'>
             <h2 className='section-title'>Practical Experience</h2>
             
             <div className="section-content">
-                <div className="section-item">
-                    <label htmlFor="company-name">
-                        Company Name:
-                    </label>
-                    <input
-                        id='company-name'
-                        type="text"
-                        value={companyName}
-                        onChange={changeCompanyName}
-                    />
-                </div>
-
                 <div className="section-item">
                     <label htmlFor="title-position">
                         Position Title:
@@ -49,6 +62,18 @@ function PracticalExp () {
                         type="text"
                         value={positionTitle}
                         onChange={changePositionTitle}
+                    />
+                </div>
+
+                <div className="section-item">
+                    <label htmlFor="company-name">
+                        Company Name:
+                    </label>
+                    <input
+                        id='company-name'
+                        type="text"
+                        value={companyName}
+                        onChange={changeCompanyName}
                     />
                 </div>
 
