@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import './App.css'
-import GeneralInfo from './GeneralInfo'
-import EducationalInfo from './EducationalInfo'
-import PracticalExp from './PracticalExp'
+import './styles/App.css'
+import GeneralInfo from './components/GeneralInfo'
+import EducationalInfo from './components/EducationalInfo'
+import PracticalExp from './components/PracticalExp'
 
 function App() {
   const [buttonState, setButtonState] = useState(false);
